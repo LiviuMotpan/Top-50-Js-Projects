@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Step Progress Bar</h1>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-brands fa-react"></i>
+        </div>
+      </div>
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+    </div>
+  </body>
+</html>

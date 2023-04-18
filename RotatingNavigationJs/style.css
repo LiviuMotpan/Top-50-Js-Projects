@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #fde616;
+    color: #fff;
+}
+
+.container {
+    background-color: #13125c;
+    transform-origin: top left;
+    transition: transform .5s linear;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+}
+
+.container.show-menu {
+    transform: rotate(-20deg);
+}
+
+.container.show-menu + .main-menu li {
+    transform: translateX(0);
+    transition-delay: .3s;
+}
+
+.container.show-menu .circle {
+    transform: rotate(-70deg);
+}
+
+.circle-box {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: #9b8c0b;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform .5s linear;
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle #open{
+    left: 60%;
+}
+
+.circle #close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content-box {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content-box h1 {
+    margin: 0;
+}
+
+.content-box p {
+    color: #fff;
+    line-height: 1.5;
+}
+
+.content-box img {
+    min-width: 100%;
+}
+
+.main-menu {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.main-menu ul li {
+    text-transform: uppercase;
+    color: #000;
+    transition: transform .4s ease-in;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+.main-menu ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.main-menu ul li:nth-child(1) {
+    transform: translateX(-100%);
+}
+
+.main-menu ul li:nth-child(2) {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+.main-menu ul li:nth-child(3) {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.main-menu ul li:nth-child(4) {
+    margin-left: 45px;
+    transform: translateX(-250%);
+}
+
+.main-menu ul li:nth-child(5) {
+    margin-left: 60px;
+    transform: translateX(-300%);
+}
